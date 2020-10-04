@@ -18,7 +18,7 @@ var specialCharacters = "!@#$%^&*()_-=+[]{}";
 
 function getUserOptions() {
   var lowerCaseOption = confirm("Would you like to include lowercase letters?");
-  var upperCaseOption = confirm("Would you like to include uppercase letters?");
+  // var upperCaseOption = confirm("Would you like to include uppercase letters?");
   var numericalValueOption = confirm("Would you like to include numerical values?");
   var specialCharacterOption = confirm("Would you like to include special characters?");
 
@@ -65,10 +65,10 @@ function generatePassword() {
 }
 var generateBtn = document.querySelector("#generate");
 // Write password to the password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-//   passwordText.value = password;
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
 }
 // This is to add event listener by clicking the button
 generateBtn.addEventListener("click", writePassword);
