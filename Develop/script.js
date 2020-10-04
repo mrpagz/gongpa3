@@ -18,7 +18,7 @@ var specialCharacters = "!@#$%^&*()_-=+[]{}";
 
 function getUserOptions() {
   var lowerCaseOption = confirm("Would you like to include lowercase letters?");
-  // var upperCaseOption = confirm("Would you like to include uppercase letters?");
+  var upperCaseOption = confirm("Would you like to include uppercase letters?");
   var numericalValueOption = confirm("Would you like to include numerical values?");
   var specialCharacterOption = confirm("Would you like to include special characters?");
 
