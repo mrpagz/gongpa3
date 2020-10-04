@@ -23,25 +23,25 @@ function getUserOptions() {
   var specialCharacterOption = confirm("Would you like to include special characters?");
 
   // This is to prompt the user on the type of password will generate
-//   if (lowerCaseOption) {
-//     lowerCaseLetters;
-//     userCharacters.push(lowerCaseLetters);
-//   }
-//   if (upperCaseOption) {
-//     upperCaseLetters;
-//     userCharacters.push(upperCaseLetters);
-//   }
-//   if (numericalValueOption) {
-//     numericalValues;
-//     userCharacters.push(numericalValues);
-//   }
-//   if (specialCharacterOption) {
-//     specialCharacters;
-//     userCharacters.push(specialCharacters);
-//   }
-//   return;
+  if (lowerCaseOption) {
+    lowerCaseLetters;
+    userCharacters.push(lowerCaseLetters);
+  }
+  if (upperCaseOption) {
+    upperCaseLetters;
+    userCharacters.push(upperCaseLetters);
+  }
+  if (numericalValueOption) {
+    numericalValues;
+    userCharacters.push(numericalValues);
+  }
+  if (specialCharacterOption) {
+    specialCharacters;
+    userCharacters.push(specialCharacters);
+  }
+  return;
 
-// }
+}
 
 function generatePassword() {
   getUserOptions();
@@ -65,10 +65,10 @@ function generatePassword() {
 }
 var generateBtn = document.querySelector("#generate");
 // Write password to the password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
+//   passwordText.value = password;
 }
 // This is to add event listener by clicking the button
 generateBtn.addEventListener("click", writePassword);
