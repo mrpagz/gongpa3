@@ -16,26 +16,26 @@ var lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
 var numericalValues = "0123456789";
 var specialCharacters = "!@#$%^&*()_-=+[]{}";
 
-function getUserOptions() {
-  var lowerCaseOption = confirm("Would you like to include lowercase letters?");
-  var upperCaseOption = confirm("Would you like to include uppercase letters?");
-  var numericalValueOption = confirm("Would you like to include numerical values?");
-  var specialCharacterOption = confirm("Would you like to include special characters?");
+function getUserChoice() {
+  var lowerCaseChoice = confirm("Would you like to include lowercase letters?");
+  var upperCaseChoice = confirm("Would you like to include uppercase letters?");
+  var numericalValueChoice = confirm("Would you like to include numerical values?");
+  var specialCharacterChoice = confirm("Would you like to include special characters?");
 
   // This is to prompt the user on the type of password will generate
-  if (lowerCaseOption) {
+  if (lowerCaseChoice) {
     lowerCaseLetters;
     userCharacters.push(lowerCaseLetters);
   }
-  if (upperCaseOption) {
+  if (upperCaseChoice) {
     upperCaseLetters;
     userCharacters.push(upperCaseLetters);
   }
-  if (numericalValueOption) {
+  if (numericalValueChoice) {
     numericalValues;
     userCharacters.push(numericalValues);
   }
-  if (specialCharacterOption) {
+  if (specialCharacterChoice) {
     specialCharacters;
     userCharacters.push(specialCharacters);
   }
@@ -44,7 +44,7 @@ function getUserOptions() {
 }
 
 function generatePassword() {
-  getUserOptions();
+  getUserChoice();
   var length = prompt("What will the length of your password be?");
   //This is to successfully generate the password requested
   var splitCharacters = userCharacters.join("");
