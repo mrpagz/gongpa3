@@ -22,10 +22,10 @@ function getUserChoice() {
   var numericalValueChoice = confirm("Would you like to include numerical values?");
   var specialCharacterChoice = confirm("Would you like to include special characters?");
 
-  // This is to prompt the user on the type of password will generate
-  if (lowerCaseChoice) {
-    lowerCaseLetters;
-    userCharacters.push(lowerCaseLetters);
+  // This is to prompt the user on the type of password that will generate
+  // if (lowerCaseChoice) {
+  //   lowerCaseLetters;
+  //   userCharacters.push(lowerCaseLetters);
   }
   if (upperCaseChoice) {
     upperCaseLetters;
@@ -49,7 +49,7 @@ function generatePassword() {
   //This is to successfully generate the password requested
   var splitCharacters = userCharacters.join("");
   var retVal = "";
-  //Conditional determining error 
+  //This is to determine error for password length
   if (isNaN(length) === true || length > 128 || length < 8) {
     alert("Password length must be provided with a number between 8 and 128");
     return;
