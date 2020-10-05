@@ -23,9 +23,9 @@ function getUserChoice() {
   var specialCharacterChoice = confirm("Would you like to include special characters?");
 
   // This is to prompt the user on the type of password that will generate
-  // if (lowerCaseChoice) {
-  //   lowerCaseLetters;
-  //   userCharacters.push(lowerCaseLetters);
+  if (lowerCaseChoice) {
+    lowerCaseLetters;
+    userCharacters.push(lowerCaseLetters);
   }
   if (upperCaseChoice) {
     upperCaseLetters;
